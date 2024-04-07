@@ -1,7 +1,3 @@
-/* SAE Réseau (Protocole TFTP) - Etape 4 - Licence 3 Info 2023-2024 */
-/* MONTGNIE Yanis m22101878 - FOLLET Milo f22108222 - Groupe 2 */
-/* Date de rendu : 29 mars 2024 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
