@@ -1,7 +1,3 @@
-/* SAE Réseau (Protocole TFTP) - Etape 3 Version Monothread - Licence 3 Info 2023-2024 */
-/* MONTGNIE Yanis m22101878 - FOLLET Milo f22108222 - Groupe 2 */
-/* Date de rendu : 18 février 2024 */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -49,8 +45,7 @@ int receiveACK(int sockfd, int expectedBlockNumber, struct sockaddr_in *addr){
     return 0;  // ACK reçu et vérifié avec succès
 }
 
-// Gestion des requêtes du client
-// Gestion des requêtes du client
+
 // Gestion des requêtes du client
 void handleRequest(int sockfd, ClientInfo *clients, int *num_clients) {
     char buffer[SIZE];
