@@ -1,0 +1,11 @@
+# Binaires compilés
+**/Client/client
+**/Serveur/serveur
+**/Serveur/server
+a.out
+*.o
+.DS_Store
+.idea/
+
+# Gros fichiers de test générés
+bigfile*.txt

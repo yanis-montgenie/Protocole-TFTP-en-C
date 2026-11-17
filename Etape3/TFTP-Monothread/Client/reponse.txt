@@ -1,0 +1,25 @@
+Exercice 1
+
+2) Elle permet d'utiliser / faire fonctionner la bibliothèque pthread.
+5 )Les fichiers sont tous différents les uns des autres. L'ordonnancement des threads est aléatoire car ils sont exécutés en parallèle.
+
+Exercice 2 
+
+1) Chaque élément de la matrice C est obtenu en faisant la somme des produits de la ième ligne de A et de la jème colonne de B. Pour k allant de 1 à n (taille de la matrice), Cij = Aik * Bkj.
+2) Les lignes 46-50 initialisent les matrices A et B avec des valeurs réelles aléatoires comprises entre 0 et 1.
+3) Chaque thread calcule une tranche de la matrice C.
+4) Car ce sont des puissances de 2 et cela simplifie les calculs. De ce fait, lors de la division de N par m on obtient un nombre entier qui se trouvent être une puissance 2. On est alors sûr que la matrice est correctement découpée et qu'une tranche ne sera pas oubliée.
+5) On utilise t+i pour fournir à la fonction la case à laquelle on veut stocker le thread alors qu'on utilise t[i] pour récupérer le thread à l'indice i de t.
+6) Le programme s'arrête avant d'avoir finit les calculs des lignes car quand le programme se termine il n'attend pas la fin des threads et la mémoire est perdue (libérée).
+
+Exercice 3 
+
+1) 6 coeurs.
+4) Que les threads sont exécutés en parallèles par les coeurs.
+
+Exercice 4
+
+1) Le compteur est commun aux 2 threads car c'est une variable globale.
+2) n*2.
+3) Le compteur peut atteindre la valeur 2 puissance 4*8 = 2 puissance 32 (a peu près 4 giga octet).
+4) Les résultats ne sont pas correctes. L'explication saurait que les threads modifient en même temps la même zone mémoire créant ainsi un résultat erroné (accès concurrent).
